@@ -3,24 +3,163 @@
 <head>
     <title>Beranda</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 30%, #7c3aed 100%);
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        table {
+            width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 14px 35px rgba(15, 23, 42, 0.35);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        td {
+            border: none;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1d4ed8 0%, #7c3aed 100%);
+            color: white;
+            text-align: center;
+            padding: 18px 12px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 12px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+        }
+
+        .header em {
+            font-size: 1.05em;
+            font-style: italic;
+            opacity: 0.96;
+        }
+
+        .nav {
+            background: linear-gradient(90deg, #312e81 0%, #4338ca 100%);
+            padding: 12px 18px;
+        }
+
+        .nav a {
+            color: #e0e7ff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .nav a:visited {
+            color: #dbeafe;
+        }
+
+        .content {
+            background: #ffffff;
+            padding: 20px 22px;
+            vertical-align: top;
+        }
+
+        .content h3 {
+            color: #1e3a8a;
+            margin: 20px 0 8px;
+            padding-left: 12px;
+            border-left: 4px solid #8b5cf6;
+            font-size: 1.35em;
+        }
+
+        .content p {
+            color: #1f2937;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .date-info {
+            color: #64748b;
+            font-size: 0.88em;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e2e8f0;
+            margin: 22px 0;
+        }
+
+        .sidebar {
+            background: linear-gradient(180deg, #f5f3ff 0%, #ede9fe 100%);
+            width: 25%;
+            vertical-align: top;
+            padding: 18px 16px;
+        }
+
+        .sidebar p {
+            color: #312e81;
+            font-weight: bold;
+            font-size: 1.08em;
+            margin-bottom: 14px;
+        }
+
+        .sidebar ol {
+            margin-left: 18px;
+            color: #4338ca;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #312e81;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #111827;
+            color: white;
+            text-align: right;
+            padding: 14px 18px;
+        }
+
+        .footer small {
+            color: #e5e7eb;
+        }
+    </style>
 </head>
 
-<body bgcolor="grey" background="images/background.svg">
-    <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
+<body>
     <p>&nbsp;</p>
-    <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
+    <table cellpadding="12px" align="center">
         <tr>
-            <td colspan="2" align="center" bgcolor="blue" background="images/jaring-teal.svg">
-                <font color="white">
-                    <p>&nbsp;</p>
-                    <h1>Website saya</h1>
-                    <p><em>Di mana ada ke hilalan , di situ ada jalan.</em></p>
-                    <p>&nbsp;</p>
-                </font>
+            <td colspan="2" class="header">
+                <p>&nbsp;</p>
+                <h1>Website Saya</h1>
+                <p><em>Di mana ada ke hilalan, di situ ada jalan.</em></p>
+                <p>&nbsp;</p>
             </td>
         </tr>
         <tr>
-            <td colspan="2" bgcolor="pink">
+            <td colspan="2" class="nav">
                 <a href="./">Beranda</a> |
                 <a href="tentang-saya.html">Tentang Saya</a> |
                 <a href="sekolahku.html">Sekolahku</a> |
@@ -28,30 +167,19 @@
             </td>
         </tr>
         <tr>
-            <td width="75%">
-                <!-- Content utama -->
-
+            <td class="content">
                 <h3>Perjalanan jarak jauh</h3>
-                <p align="right"><small><em>Senin, 7 September 2026</em></small></p>
-                <p>Karena adanya virus korona, maka selama
-                2 tahun ke depan, pembelajaran dilakukan secara jarak jauh.
-                Pembelajaran dapat memakai zoom, LMS, WhatsApp, Telegram,
-                atau media lain yang ditentukan oleh guru.</p>
-            
+                <p align="right"><small class="date-info"><em>Senin, 7 September 2026</em></small></p>
+                <p>Karena adanya virus korona, maka selama 2 tahun ke depan, pembelajaran dilakukan secara jarak jauh. Pembelajaran dapat memakai zoom, LMS, WhatsApp, Telegram, atau media lain yang ditentukan oleh guru.</p>
 
                 <hr>
 
-                <h3>fotografer handal sangat</h3>
-                <p align="right"><small><em>Jumat, 4 September 2026</em></small></p>
-                <p>Telah dibuka pendaftaran lomba pemotretan foto
-                tentang pariwisata di Tangerang. Lomba ini bekerja sama dengan
-                MGMP DKV Kota Tangerang, yang bertujuan untuk memperkenalkan
-                pariwisata yang ada di kota Tangerang.</p>
-           
-
-                <!-- Akhir dari content utama -->
+                <h3>Fotografer handal sangat</h3>
+                <p align="right"><small class="date-info"><em>Jumat, 4 September 2026</em></small></p>
+                <p>Telah dibuka pendaftaran lomba pemotretan foto tentang pariwisata di Tangerang. Lomba ini bekerja sama dengan MGMP DKV Kota Tangerang, yang bertujuan untuk memperkenalkan pariwisata yang ada di kota Tangerang.</p>
             </td>
-            <td width="25%" valign="top" bgcolor="pink">
+
+            <td class="sidebar" valign="top">
                 <p>Tautan eksternal</p>
                 <ol>
                     <li><a href="https://www.youtube.com">Website saya</a></li>
@@ -62,12 +190,11 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2" align="right" bgcolor="black">
-                <font color="white"><small>&copy; Copyright Hilaal al kahfi s.kom, 2026.</small></font>
+            <td colspan="2" class="footer">
+                <small>&copy; Copyright Hilaal al kahfi s.kom, 2026.</small>
             </td>
         </tr>
     </table>
     <p>&nbsp;</p>
 </body>
-
 </html>
